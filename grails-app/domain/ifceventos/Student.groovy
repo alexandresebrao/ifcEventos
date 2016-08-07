@@ -4,9 +4,9 @@ class Student {
 
     String fname
     String lname
-    static hasMany = [events: Event]
     String email
 
     static constraints = {
+        email email: true, blank: false
     }
 }
