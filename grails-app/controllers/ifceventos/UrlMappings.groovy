@@ -9,7 +9,17 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/events" {
+            controller = "Event"
+
+        }
+
+        "/" {
+            controller = "Welcome"
+            action = "index"
+        }
+
+
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
